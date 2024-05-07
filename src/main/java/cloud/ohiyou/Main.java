@@ -117,7 +117,7 @@ public class Main {
             }
         }
 
-        String title = allSuccess ? "签到成功" : "签到失败"; // 根据所有签到结果决定标题
+        String title = "HiFiNi自动签到"; // 根据所有签到结果决定标题
         // 推送
         publishWechat(SERVER_CHAN_KEY, title,messageBuilder.toString());
         DingTalkUtils.pushBotMessage(DINGTALK_WEBHOOK, title, messageBuilder.toString(), "", "markdown");
